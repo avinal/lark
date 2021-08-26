@@ -14,5 +14,5 @@ LABEL org.opencontainers.image.version="0.1.0-beta"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get upgrade -y && apt-get install git
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 RUN pip3 install -r requirements.txt
