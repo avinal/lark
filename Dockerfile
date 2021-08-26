@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: GPL-2.0
+# SPDX-FileCopyrightText: 2021 Avinal Kumar <avinal.xlvii@gmail.com>
+#
+# Distributed under the terms of MIT License
+# The full license is in the file LICENSE, distributed with this software.
+
+FROM python:slim-buster
+
+ADD requirements.txt /
+
+LABEL space.avinal.image.author="Avinal Kumar <avinal.xlvii@gmail.com>"
+LABEL space.avinal.image.source="https://github.com/avinal/lark"
+LABEL space.avinal.image.version="0.1.0"
+
+RUN apt-get update && apt-get upgrade -y
+RUN pip3 install -r requirements.txt
