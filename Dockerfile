@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0
+# SPDX-License-Identifier: MIT
 # SPDX-FileCopyrightText: 2021 Avinal Kumar <avinal.xlvii@gmail.com>
 #
 # Distributed under the terms of MIT License
