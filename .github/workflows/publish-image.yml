@@ -6,13 +6,13 @@
 
 name: publish image
 
-on: [ release ]
+on: [release]
 
 jobs:
   publish-image:
     runs-on: ubuntu-latest
-    env: 
-      IMAGE_NAME:  ghcr.io/avinal/lark:${{ secrets.VERSION }}
+    env:
+      IMAGE_NAME: ghcr.io/avinal/lark:latest
 
     steps:
       - uses: actions/checkout@v2

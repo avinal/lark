@@ -10,9 +10,9 @@ ADD requirements.txt /
 
 LABEL org.opencontainers.image.author="Avinal Kumar <avinal.xlvii@gmail.com>"
 LABEL org.opencontainers.image.source="https://github.com/avinal/lark"
-LABEL org.opencontainers.image.version="0.1.0-beta"
+LABEL org.opencontainers.image.version="latest"
+LABEL org.opencontainers.image.description "A Docker image for https://github.com/avinal/Profile-Readme-WakaTime project as well as experimenting with GitHub Container Registry."
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y git
-RUN pip3 install -r requirements.txt
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git && pip3 install -r requirements.txt

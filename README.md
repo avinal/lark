@@ -11,5 +11,3 @@ A Docker image for [Profile-Readme-WakaTime](https://github.com/avinal/Profile-R
 ```bash
     docker pull ghcr.io/avinal/lark:<version>
 ```
-
-*This is a work in progress, more details will be added soon*
